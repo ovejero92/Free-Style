@@ -40,8 +40,10 @@ body{display: flex;
 a{text-decoration: none;
     padding: 20px;
 }
-a:hover{
-    color: rgb(4, 21, 16); background-color: blueviolet; font-weight: 900;  }
+.footer-torneo{margin: 1px 273px 0px 273px;padding: 4px 100px 4px 100px;
+    background-color: rgba(255, 0, 0, 0.774);}
+.tefu:hover {
+  background-color: rgba(255, 192, 203, 0.721); border-radius:6px; transform: translate(10px, 10px);}
 /*-----------------historia-------------- */
 h2{font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;font-size: 55px;
@@ -67,17 +69,21 @@ footer ul li
         list-style-type: none;
         padding: 10px;
         font-size: 20px;}
+.footer-historia{margin: 1px 273px 0px 273px;padding: 4px 100px 4px 100px;
+            background-color: rgba(255, 192, 203, 0.737);}
+.tehi:hover {
+                background-color:rgba(248, 52, 52, 0.71); border-radius:6px; transform: translate(10px, 10px);}            
 /*------------------torneos------------*/
 
 .caja-verde{
-    margin-top: 100px;
+    margin-top: 50px;
     border-top: 6px solid red;
     background-color: rgba(251, 253, 255, 0.557);
     margin: auto;
     display: flex;
     justify-content: center;
-    width: 1500px;
-    height: 350px;
+    width: 1000px;
+    height: 300px 350px;
     }
     .caja-verde img{
         float: left;
@@ -91,7 +97,10 @@ footer ul li
         list-style-type: none;
         
     }
-
+    .footer-tecnicas{margin: 1px 323px 0px 323px;padding: 4px 100px 4px 100px;
+        background-color:rgba(127, 255, 212, 0.703) }
+.tete:hover {
+            background-color:rgba(190, 252, 33, 0.664); border-radius:6px; transform: translate(10px, 10px);}       
 /*--------------tecnicas----------------*/
 .centar
     { 
