@@ -40,7 +40,7 @@ body{display: flex;
 a{text-decoration: none;
     padding: 20px;
 }
-.footer-torneo{margin: 1px 273px 0px 273px;padding: 4px 100px 4px 100px;
+.footer-torneo{
     background-color: rgba(255, 0, 0, 0.774);}
 .tefu:hover {
   background-color: rgba(255, 192, 203, 0.721); border-radius:6px; transform: translate(10px, 10px);}
@@ -69,7 +69,7 @@ footer ul li
         list-style-type: none;
         padding: 10px;
         font-size: 20px;}
-.footer-historia{margin: 1px 273px 0px 273px;padding: 4px 100px 4px 100px;
+.footer-historia{
             background-color: rgba(255, 192, 203, 0.737);}
 .tehi:hover {
                 background-color:rgba(248, 52, 52, 0.71); border-radius:6px; transform: translate(10px, 10px);}            
@@ -97,21 +97,21 @@ footer ul li
         list-style-type: none;
         
     }
-    .footer-tecnicas{margin: 1px 323px 0px 323px;padding: 4px 100px 4px 100px;
+    .footer-tecnicas{
         background-color:rgba(127, 255, 212, 0.703) }
 .tete:hover {
             background-color:rgba(190, 252, 33, 0.664); border-radius:6px; transform: translate(10px, 10px);}       
 /*--------------tecnicas----------------*/
 .centar
     { 
-        margin-top: 50px;
+        margin-top: 70px;
      border-top: 6px solid rgba(127, 255, 212, 0.708);
      background-color: rgba(251, 253, 255, 0.557);
      margin:auto;
      display: flex;
      justify-content: center;
      width: 900px;
-     height: 500px;}
+     height: 550px;}
     .centar ul {
         font-size: 20px;
         width: auto;
@@ -128,7 +128,12 @@ footer ul li
     #index{
         text-align: right;
      font-size: 50px;
-     margin: auto;}
+     margin: 0 auto;}
+     #index nav {
+         display: inline-flex;
+         margin-top: 1%;
+         padding: 5%;
+     }
      #index ul li{
         text-decoration-style: none;
         text-decoration: none;
