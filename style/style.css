@@ -1,7 +1,6 @@
-
-*{margin:0;padding: 0; box-sizing: border-box;font-family: sans-serif}
+*{padding: 0; }
 .border{border: 2px solid white;}
-#grilla{
+.grilla{
     display:grid ;
     grid-template-areas: 
     "titulo titulo titulo titulo"
@@ -13,7 +12,7 @@
     grid-row-gap:50px;
     height: 100vh;
 }
-#grilla header ul li {text-decoration-style: none;
+.grilla header ul li {text-decoration-style: none;
     text-decoration: none;
     list-style-type: none;}
 h1{grid-area:titulo;}
@@ -33,7 +32,7 @@ h1
      margin:50px; }
 header{
     text-align: center;font-size: 100px;line-height: 170px;color: white;}
-body{display: flex;
+body{
     flex-direction: column;
     justify-content: center;
     background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
