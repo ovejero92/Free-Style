@@ -1,190 +1,158 @@
-.border {
-  border: 2px solid white;
+*{padding: 0; }
+.border{border: 2px solid white;}
+.grilla{
+    display:grid ;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "historia historia historia historia"
+    "torneo torneo torneo torneo"
+    "tecnicas tecnicas tecnicas tecnicas";
+    grid-template-rows:1fr 2fr 1fr;
+    grid-template-columns: 100px auto 50px;
+    grid-row-gap:50px;
+    height: 100vh;
 }
+.grilla header ul li {text-decoration-style: none;
+    text-decoration: none;
+    list-style-type: none;}
+h1{grid-area:titulo;}
+nav{grid-area:historia}
+section{grid-area:torneo;}
+aside{grid-area: tecnicas;}
 
-.grilla {
-  display: grid;
-  grid-template-areas: "titulo titulo titulo titulo" "historia historia historia historia" "torneo torneo torneo torneo" "tecnicas tecnicas tecnicas tecnicas";
-  grid-template-rows: 1fr 2fr 1fr;
-  grid-template-columns: 100px auto 50px;
-  grid-row-gap: 50px;
-  height: 100vh;
+.fondo-index{
+    background-image:url(../img/fondo/city.jpg)
 }
-
-.grilla header ul li {
-  text-decoration-style: none;
-  text-decoration: none;
-  list-style-type: none;
+h1
+{    text-align: center;
+     font-size: 100px;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     background-color: rgba(127, 255, 212, 0.484);
+     color: rgba(255, 255, 255, 0.913);
+     margin:50px; }
+header{
+    text-align: center;font-size: 100px;line-height: 170px;color: white;}
+body{
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
+a{text-decoration: none;
+    padding: 20px;
 }
-
-h1 {
-  grid-area: titulo;
-}
-
-nav {
-  grid-area: historia;
-}
-
-section {
-  grid-area: torneo;
-}
-
-aside {
-  grid-area: tecnicas;
-}
-
-.fondo-index {
-  background-image: url(../img/fondo/city.jpg);
-}
-
-h1 {
-  text-align: center;
-  font-size: 100px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: rgba(127, 255, 212, 0.484);
-  color: rgba(255, 255, 255, 0.913);
-  margin: 50px;
-}
-
-header {
-  text-align: center;
-  font-size: 100px;
-  line-height: 170px;
-  color: white;
-}
-
-body {
-  flex-direction: column;
-  justify-content: center;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-a {
-  text-decoration: none;
-  padding: 20px;
-}
-
-.footer-torneo {
-  background-color: rgba(255, 0, 0, 0.774);
-}
-
+.footer-torneo{
+    background-color: rgba(255, 0, 0, 0.774);}
 .tefu:hover {
-  background-color: rgba(255, 192, 203, 0.721);
-  border-radius: 6px;
-  transform: translate(10px, 10px);
-}
-
+  background-color: rgba(255, 192, 203, 0.721); border-radius:6px; transform: translate(10px, 10px);}
 /*-----------------historia-------------- */
-h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: white;
-  font-size: 55px;
-  padding: 0, 2px;
-  margin-bottom: 0px;
+h2{font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;font-size: 55px;
+    padding: 0,2px;margin-bottom: 0px;}
+.fondo-resto{
+    background-image: url(../img/fondo/fondogrmadn\ -redeando.blogspot.jpg);
+ }
+.centrar{width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 2px;
+    background: white;
+    margin-top: 100px;
+    border-top: 6px solid pink;
 }
-
-.fondo-resto {
-  background-image: url(../img/fondo/fondogrmadn\ -redeando.blogspot.jpg);
-}
-
-.centrar {
-  width: 100%;
-  max-width: 1000px;
-  margin: auto;
-  padding: 2px;
-  background: white;
-  margin-top: 100px;
-  border-top: 6px solid pink;
-}
-
-.centrar img {
-  width: 300px;
-  float: left;
-  margin-right: 20px;
-}
-
-p {
-  font-size: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-footer ul li {
-  text-decoration-style: none;
-  text-decoration: none;
-  list-style-type: none;
-  padding: 10px;
-  font-size: 20px;
-}
-
-.footer-historia {
-  background-color: rgba(255, 192, 203, 0.737);
-}
-
+.centrar img{width:300px;
+float: left;
+margin-right: 20px;}
+p{font-size: 20px;font-family: Georgia, 'Times New Roman', Times, serif;}
+footer ul li
+    {text-decoration-style: none;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 10px;
+        font-size: 20px;}
+.footer-historia{
+            background-color: rgba(255, 192, 203, 0.737);}
 .tehi:hover {
-  background-color: rgba(248, 52, 52, 0.71);
-  border-radius: 6px;
-  transform: translate(10px, 10px);
-}
+                background-color:rgba(248, 52, 52, 0.71); border-radius:6px; transform: translate(10px, 10px);}            
+/*------------------torneos------------*/
 
-.centar {
-  margin-top: 70px;
-  border-top: 6px solid rgba(127, 255, 212, 0.708);
-  background-color: rgba(251, 253, 255, 0.557);
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  width: 900px;
-  height: 550px;
-}
-
-.centar ul {
-  font-size: 20px;
-  width: auto;
-  height: 50px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  list-style: none;
-}
-
-.centrar ul li {
-  font-size: 20px;
-  margin: 0, auto;
-}
-
-.caja-verde {
-  margin-top: 50px;
-  border-top: 6px solid red;
-  background-color: rgba(251, 253, 255, 0.557);
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  width: 1000px;
-  height: 300px 350px;
-}
-
-.caja-verde img {
-  float: left;
-  width: 150px;
-  height: 100px;
-  margin-right: 80px;
-}
-
-.caja-verde ul {
-  font-size: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  list-style-type: none;
-}
-
-.footer-tecnicas {
-  background-color: rgba(127, 255, 212, 0.703);
-}
-
+.caja-verde{
+    margin-top: 50px;
+    border-top: 6px solid red;
+    background-color: rgba(251, 253, 255, 0.557);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 300px 350px;
+    }
+    .caja-verde img{
+        float: left;
+        width: 150px;
+        height: 100px;
+        margin-right: 80px;
+    }
+    .caja-verde ul{
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        list-style-type: none;
+        
+    }
+    .footer-tecnicas{
+        background-color:rgba(127, 255, 212, 0.703) }
 .tete:hover {
-  background-color: rgba(190, 252, 33, 0.664);
-  border-radius: 6px;
-  transform: translate(10px, 10px);
+            background-color:rgba(190, 252, 33, 0.664); border-radius:6px; transform: translate(10px, 10px);}       
+/*--------------tecnicas----------------*/
+.centar
+    { 
+        margin-top: 70px;
+     border-top: 6px solid rgba(127, 255, 212, 0.708);
+     background-color: rgba(251, 253, 255, 0.557);
+     margin:auto;
+     display: flex;
+     justify-content: center;
+     width: 900px;
+     height: 550px;}
+    .centar ul {
+        font-size: 20px;
+        width: auto;
+      height: 50px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      list-style: none;
+}    
+.centrar ul li{
+    font-size: 20px;
+    margin: 0,auto;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*---------------otro---------------*/
+@media screen and (max-width:480px) {
+    #index{
+        text-align: right;
+     font-size: 50px;
+     margin: 0 auto;}
+     #index nav {
+         display: inline-flex;
+         margin-top: 1%;
+         padding: 5%;
+     }
+     #index ul li{
+        text-decoration-style: none;
+        text-decoration: none;
+        list-style-type: none;
+     }
+    #historia{
+        display: flex;
+        text-align:left;
+        font-size: 50px;
+        margin: auto
+    }
+    #tecnicas{  
+        display: grid;
+        text-align:left;
+        font-size:60px;
+        margin:10px;}
+    #torneos{
+    font-size: 40px;
+    margin: auto;
+    display: inline-flex;
+    padding: 10px;
+    }
+}
