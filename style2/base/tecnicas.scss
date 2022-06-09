@@ -1,0 +1,22 @@
+
+.centar
+{ 
+    margin-top: 70px;
+ border-top: 6px solid rgba(127, 255, 212, 0.708);
+ background-color: rgba(251, 253, 255, 0.557);
+ margin:auto;
+ display: flex;
+ justify-content: center;
+ width: 900px;
+ height: 550px;}
+.centar ul {
+    font-size: 20px;
+    width: auto;
+  height: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+}    
+.centrar ul li{
+font-size: 20px;
+margin: 0,auto;
+}

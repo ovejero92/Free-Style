@@ -1,0 +1,29 @@
+/*-----------------historia-------------- */
+h2{font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;font-size: 55px;
+    padding: 0,2px;margin-bottom: 0px;}
+.fondo-resto{
+    background-image: url(../img/fondo/fondogrmadn\ -redeando.blogspot.jpg);
+ }
+.centrar{width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 2px;
+    background: white;
+    margin-top: 100px;
+    border-top: 6px solid pink;
+}
+.centrar img{width:300px;
+float: left;
+margin-right: 20px;}
+p{font-size: 20px;font-family: Georgia, 'Times New Roman', Times, serif;}
+footer ul li
+    {text-decoration-style: none;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 10px;
+        font-size: 20px;}
+.footer-historia{
+            background-color: rgba(255, 192, 203, 0.737);}
+.tehi:hover {
+                background-color:rgba(248, 52, 52, 0.71); border-radius:6px; transform: translate(10px, 10px);}  
