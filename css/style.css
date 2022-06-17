@@ -1,0 +1,146 @@
+@media screen and (max-width: 480px) {
+  #index {
+    text-align: right;
+    font-size: 50px;
+    margin: 0 auto;
+  }
+  #index nav {
+    display: inline-flex;
+    margin-top: 1%;
+    padding: 5%;
+  }
+  #index ul li {
+    text-decoration-style: none;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  #historia {
+    display: flex;
+    text-align: left;
+    font-size: 50px;
+    margin: auto;
+  }
+  #tecnicas {
+    display: grid;
+    text-align: left;
+    font-size: 60px;
+    margin: 10px;
+  }
+  #torneos {
+    font-size: 40px;
+    margin: auto;
+    display: inline-flex;
+    padding: 10px;
+  }
+}
+/*-----------------historia-------------- */
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 55px;
+  padding: 0, 2px;
+}
+
+.fondo-resto {
+  background-color: color #114357;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #F29492 100%);
+}
+
+.centrar {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2px;
+  margin-top: 100px;
+  border-top: 6px solid pink;
+}
+.centrar img {
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+p {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+footer ul li {
+  text-decoration-style: none;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.footer-historia {
+  background-color: rgba(255, 192, 203, 0.737);
+}
+
+.tehi:hover {
+  background-color: rgba(248, 52, 52, 0.71);
+  border-radius: 6px;
+  transform: translate(10px, 10px);
+}
+
+.caja-verde {
+  margin-top: 50px;
+  border-top: 6px solid red;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  height: 300px 350px;
+}
+.caja-verde img {
+  float: left;
+  width: 150px;
+  height: 100px;
+  margin-right: 80px;
+}
+.caja-verde ul {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  list-style-type: none;
+}
+
+.footer-tecnicas {
+  background-color: rgba(127, 255, 212, 0.703);
+}
+
+.tete:hover {
+  background-color: rgba(190, 252, 33, 0.664);
+  border-radius: 6px;
+  transform: translate(10px, 10px);
+}
+
+.centar {
+  margin-top: 70px;
+  border-top: 6px solid rgba(127, 255, 212, 0.708);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  height: 550px;
+}
+.centar ul {
+  font-size: 20px;
+  width: auto;
+  height: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+}
+.centar li {
+  font-size: 20px;
+  margin: 0, auto;
+}
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+}
+
+
