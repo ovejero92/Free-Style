@@ -20,13 +20,13 @@ section{grid-area:torneo;}
 aside{grid-area: tecnicas;}
 
 .fondo-index{
-    background-image:url(../img/fondo/city.jpg)
-}
+    background-image: $bg-menu; }
 h1
 {    text-align: center;
      font-size: 100px;
      font-family:Georgia, 'Times New Roman', Times, serif;
-     background-color: rgba(127, 255, 212, 0.484);
+     background-color:$bg-title;
+     background-image:$bg-titlegra ;
      color: rgba(255, 255, 255, 0.913);
      margin:50px; }
 header{
