@@ -1,20 +1,31 @@
 /*-----------------historia-------------- */
+h1
+{    text-align: map-get($titulo, centrar );
+     font-size: map-get($titulo, fs );
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     background-color:map-get($titulo, fondo );
+     color: map-get($titulo, letra );
+     margin:0px;
+    padding: 5px;
+    }
+
 h2{font-family: Georgia, 'Times New Roman', Times, serif;
    
     font-size: 55px;
     padding: 0,2px;}
 .fondo-resto{
-   background-color:$bg-pg; 
+
    background-image:$bg-pggra;
  }
 .centrar
 {   
-    width: 100%;
-    max-width: 1000px;
+    width: map-get($centrar , width );
+    max-width: map-get($centrar , max-wi );
     margin: auto;
     padding: 2px;
-    margin-top: 100px;
-    border-top: 6px solid pink;
+    background-color: $bg-pg;
+    margin-top: map-get($centrar , margen );
+    border-top: map-get($centrar , borde-Rosa );
   img
   {
     width:300px;
@@ -23,11 +34,7 @@ h2{font-family: Georgia, 'Times New Roman', Times, serif;
 }
 p{font-size: 20px;font-family: Georgia, 'Times New Roman', Times, serif;}
 footer ul li
-    {text-decoration-style: none;
-        text-decoration: none;
-        list-style-type: none;
-        padding: 10px;
-        font-size: 20px;}
+    {@extend %footer}
 .footer-historia{
             background-color: rgba(255, 192, 203, 0.737);}
 .tehi:hover {

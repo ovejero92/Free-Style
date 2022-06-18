@@ -2,9 +2,9 @@
 .centar
 { 
     margin-top: 70px;
-    border-top: 6px solid rgba(127, 255, 212, 0.708);
+    border-top: map-get($centrar, borde-celeste );
     margin:auto;
-    display: flex;
+    display: flex; 
     justify-content: center;
     width: 900px;
     height: 550px;
@@ -19,3 +19,5 @@
     font-size: 20px;
     margin: 0,auto;}
   }
+  .footer-tecnicas{
+   background-color:rgba(127, 255, 212, 0.703) }

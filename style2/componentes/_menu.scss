@@ -1,36 +1,28 @@
-.border{border: 2px solid white;}
-.grilla{
-    display:grid ;
-    grid-template-areas: 
-    "titulo titulo titulo titulo"
-    "historia historia historia historia"
-    "torneo torneo torneo torneo"
-    "tecnicas tecnicas tecnicas tecnicas";
-    grid-template-rows:1fr 2fr 1fr;
-    grid-template-columns: 100px auto 50px;
-    grid-row-gap:50px;
-    height: 100vh;
-}
-.grilla header ul li {text-decoration-style: none;
-    text-decoration: none;
-    list-style-type: none;}
-h1{grid-area:titulo;}
-nav{grid-area:historia}
-section{grid-area:torneo;}
-aside{grid-area: tecnicas;}
 
+header{
+    display: flex;
+    color: white;
+    font-size: 70px;
+    nav{
+display: flex;
+    }
+}
+.carrusel{
+    display: flex;  
+    
+    .carousel-inner img {
+      width: 100%;
+        max-height: 460px;
+    
+    }
+    
+    .carousel-inner{
+        width: 600px;
+     height: 500px;
+   
+    } }
 .fondo-index{
     background-image: $bg-menu; }
-h1
-{    text-align: center;
-     font-size: 100px;
-     font-family:Georgia, 'Times New Roman', Times, serif;
-     background-color:$bg-title;
-     background-image:$bg-titlegra ;
-     color: rgba(255, 255, 255, 0.913);
-     margin:50px; }
-header{
-    text-align: center;font-size: 100px;line-height: 170px;color: white;}
 body{
     flex-direction: column;
     justify-content: center;
