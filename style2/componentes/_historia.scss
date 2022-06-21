@@ -3,7 +3,7 @@ h1
 {    text-align: map-get($titulo, centrar );
      font-size: map-get($titulo, fs );
      font-family:Georgia, 'Times New Roman', Times, serif;
-     background-color:map-get($titulo, fondo );
+background-color: black;
      color: map-get($titulo, letra );
      margin:0px;
     padding: 5px;
