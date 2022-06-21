@@ -21,12 +21,52 @@ display: flex;
      height: 500px;
    
     } }
+.redes-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul li{
+        display: inline-block;
+        margin: 0 5px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+    }
+    a{
+        display: block;
+        padding: 0 10px;
+        background-color: #333;
+        color: #fff;
+        line-height: 50px;
+        font-size: 18px;
+        box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    }
+    :hover a{
+        filter: blur(2px);
+        }
+        }
+.redes-container ul li a:hover{
+transform: translateY(-3px) scale(1.05);
+box-shadow: 0 5px 5px 0px rgba(0,0,0,.4);
+filter: none;
+}
+.redes-container ul li .facebook:hover{
+    background: var(--facebook);
+}
+.redes-container ul li .instagram:hover{
+    background: var(--instagram);
+}
+.redes-container ul li .twitter:hover{
+    background: var(--twitter);
+}
+.redes-container ul li .pinterest:hover{
+    background: var(--pinterest);
+}
+.redes-container ul li .linkedin:hover{
+    background: var(--linkedin);
+}
 .fondo-index{
     background-image: $bg-menu; }
-body{
-    flex-direction: column;
-    justify-content: center;
-    background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
 a{text-decoration: none;
     padding: 20px;
 }
