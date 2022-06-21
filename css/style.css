@@ -110,8 +110,8 @@ h1 {
   text-align: center;
   font-size: 100px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-  color: white;
+  color: #aff6cf;
+  background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
   margin: 0px;
   padding: 5px;
 }
