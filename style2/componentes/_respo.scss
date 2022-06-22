@@ -1,13 +1,16 @@
-@media screen and (max-width: 480px) {
-  .carrusel div{
-    display: none;
-    width: 100%;
-}
-    .carrusel div p{
-        display: none;
-        align-items: baseline;
+@media screen and (max-width:480px) {
+ #menu{
+    div img {
+        display: flex;
+        flex-direction: row;
         width: 100%;
-    }  
+        margin: 0 auto;
+    }
+    .centrar{
+        flex-direction: row-reverse;
+        
+    }
+ }
      #historia{
          display: flex;
          text-align:left;
