@@ -1,31 +1,30 @@
-@media screen and (max-width:480px) {
- #menu{
+@media screen and (max-width:800px) {
+    .off{display: none;}
+    H2{ 
+        width: 100%;
+        font-size: 100px;
+    }
     div img {
         display: flex;
         flex-direction: row;
         width: 100%;
         margin: 0 auto;
+    }  }
+    @media screen and (max-width:400px) and (max-width:800px)  {
+    h1{ width: 100%;
+    font-size: 80px;}
+    h2{width: 50%;
+    font-size: 40px;}
+    article{display: block;
+        width: 100%;
+        img{width: 100%;}
+        p{width: 90%;
+        max-width: 1000px;}
     }
-    .centrar{
-        flex-direction: row-reverse;
+    }
         
-    }
- }
-     #historia{
-         display: flex;
-         text-align:left;
-         font-size: 50px;
-         margin: auto
-       }
     #tecnicas{  
         display: grid;
         text-align:left;
         font-size:60px;
         margin:10px;}
-     #torneos{
-     font-size: 40px;
-     margin: auto;
-     display: inline-flex;
-     padding: 10px;
-     }
-}
