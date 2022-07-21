@@ -212,7 +212,7 @@ p {
   transform: translate(10px, 10px);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .off {
     display: none;
   }
