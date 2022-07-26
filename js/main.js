@@ -15,21 +15,26 @@ let stockProductoB= 100
 
 let cantidadCompras= prompt ("Ingrese la cantidad de productos distintos que quiere comprar: /n- Mesa'n- Silla")
 let precioTotal = 0;
- for(let i = 0; i < cantidadCompras; i++){
+
+function calculostock (cantidad, stock, precio) {
+    if(stock >= cantidad) {
+        calculoPrecio(cantidad, precio)
+        alert("el precio roral es de: $" + (cantidad + precio))
+    }
+    else{
+        alert("no disponemos de esa cantidad en stock. Nuestro stock actual es de: " + stock + "unidades")
+    }
+}
+
+for(let i = 0; i < cantidadCompras; i++){
 let compra1= prompt("ingrese la nombre del producto que quiere comprar: /n- Mesa/n-Silla")
 let cantidad1= prompt("ingrese la cantidad del producto que quiere comprar")
 
 if(cmpra1 == "mesa"){
-    if(stocProductoA >= cantidad1) {    preciototal += cantidad1 + precioProductoA 
-    alert("el precio total es de : $" + (cantidad1 + precioProductoA))}
-    else{
-        alert("no disponemos de esa cantidad en stock. nuestro stock actual es de: " + stockProductoA+ " unidades")
-    }
+    calculostock(cantidad1, stockProductoA, precioProductoA)
 }
 else if (compra1 == "silla"){
-    if(stockProductoB >= cantidad1) {precioTotal += cantidad1 * precioProductoB 
-    alert("el precio total es de: $" + (cantidad1 * precioProductoB))}
-    else{alert("no disponemos de esa cantidad en stock. nuestro stock actual es de : " + stockProductoB + " unidades") }
+   calculostock(cantidad1, stockProductoB, precioProductoB)
 }
 else{ alert("no tenemos ese producto")}
  }
