@@ -1,17 +1,23 @@
-for(let i = 1 ; i <= 5 ; i++) {
-    let nombre = prompt( "ingrese su nombre:")
-        alert("bienvenido " + nombre + "." + "\nSu turno es el N:" + i)
-        
-    }
-    alert("nos quedamos sin turnos")
+function produto (nombre, precio, stock){
+    this.nombre = nombre
+    this.precio = precio
+    this.stock = stock
+}
+sumaIva() 
+ {
+    this.precio = this.precio * 1.21}
 
-    let nombreproductoA= "mesa"
-let precioProductoA= 1000
-let stockProductoA= 10
 
-let nombreProductoB= "silla"
-let precioProductoB= 500
-let stockProductoB= 100
+const productoA = new producto("mesa", 1000, 10)
+const productoB = new producto("silla", 500, 100)
+const productoC = new producto("lampara", 100, 1000)
+const productoD = new producto("lapices", 5, 10000)
+
+const productos = [];
+productos.push(new productoE("arroz",300,100))
+productos.push(new productoF("fideso", 200, 500))
+for (const producto of productos)
+ producto.sumaIva()
 
 let cantidadCompras= prompt ("Ingrese la cantidad de productos distintos que quiere comprar: /n- Mesa'n- Silla")
 let precioTotal = 0;
@@ -27,14 +33,20 @@ function calculostock (cantidad, stock, precio) {
 }
 
 for(let i = 0; i < cantidadCompras; i++){
-let compra1= prompt("ingrese la nombre del producto que quiere comprar: /n- Mesa/n-Silla")
+let compra1= prompt("ingrese la nombre del producto que quiere comprar: /n- Mesa/n-Silla").toLowerCase()
 let cantidad1= prompt("ingrese la cantidad del producto que quiere comprar")
 
-if(cmpra1 == "mesa"){
+if(cmpra1 == productoA.nombre){
     calculostock(cantidad1, stockProductoA, precioProductoA)
 }
-else if (compra1 == "silla"){
+else if (compra1 == productoB.nombre){
    calculostock(cantidad1, stockProductoB, precioProductoB)
+}
+else if (compra1 == productoC.nombre){
+    calculostock(cantidad1, stockProductoC, precioProductoC)
+}
+else if (compra1 == productoD.nombre){
+    calculostock(cantidad1, stockProductoD, precioProductoD)
 }
 else{ alert("no tenemos ese producto")}
  }
